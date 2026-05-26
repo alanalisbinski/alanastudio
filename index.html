@@ -8,11 +8,18 @@
 </head>
 <body>
     <header>
-       <div class="logo-container">
-        <img class="logotipo" src="imagens/logotipo.png" alt="logotipo">
-       </div>
+        <div class="logo-container">
+            <img class="logotipo" src="imagens/logotipo.png" alt="logotipo">
+        </div>
 
-        <nav class="navbar" alt="nav">
+        <!-- Ícone do Menu Hambúrguer (só aparece no celular) -->
+        <div class="menu-hamburguer" id="menuHamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
             <ul>
                 <li><a href="#intro-text">Inicio</a></li>
                 <li><a href="#my-projects">Projetos</a></li>
@@ -25,7 +32,6 @@
     <section class="secao-apresentacao"></section>
 
     <section class="redes-sociais">
-
         <div class="item-rede">
             <div class="circulo-icone">
                 <img src="imagens/instagram.jpg" alt="instagram">
@@ -34,7 +40,7 @@
         </div>
     </section>
 
-    <section class="intro-section">
+    <section class="intro-section" id="intro-text">
         <div class="intro-content">
             <div class="intro-text">
                 <h2>Olá, sou Alana Cristina!</h2>
@@ -56,9 +62,8 @@
         </div>
 
         <div class="foto-wrapper">
-         <img src="imagens/Foto-perfil.jpeg" alt="foto-perfil" class="foto-perfil">
+            <img src="imagens/Foto-perfil.jpeg" alt="foto-perfil" class="foto-perfil">
         </div>
-
 
         <div class="intro-info">
             <h3>ALANA CRISTINA</h3>
@@ -67,25 +72,25 @@
         </div>
     </section>
 
-    <section class="my-projects" alt="my-projects">
-    <div class="projects">
-        <h1>My Projects</h1>
-        <h3>Projetos de identidades visuais de marcas e produtos empresariais.</h3>
+    <section class="my-projects" id="my-projects">
+        <div class="projects">
+            <h1>My Projects</h1>
+            <h3>Projetos de identidades visuais de marcas e produtos empresariais.</h3>
 
-        <div class="galeria-projetos">
-            <img src="imagens/soap-projects.png" alt="projeto-1">
-            <img src="imagens/tabela-precos.png" alt="projeto-2">
+            <div class="galeria-projetos">
+                <img src="imagens/soap-projects.png" alt="projeto-1">
+                <img src="imagens/tabela-precos.png" alt="projeto-2">
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <section class="banner-conect"></section>
+    <section class="banner-conect" id="banner-conect"></section>
 
     <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-img" id="lightbox-img">
-</div>
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

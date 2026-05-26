@@ -1,3 +1,18 @@
+const menuHamburguer = document.getElementById('menuHamburguer');
+const navbar = document.getElementById('navbar');
+
+menuHamburguer.addEventListener('click', () => {
+    navbar.classList.toggle('ativo');
+    menuHamburguer.classList.toggle('aberto');
+});
+
+// Fechar menu ao clicar em um link
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('ativo');
+    });
+});
+
 const images = document.querySelectorAll(".galeria-projetos img");
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
@@ -28,13 +43,11 @@ let translateY = 0;
 
 lightboxImg.addEventListener("wheel", (e) => {
     e.preventDefault();
-
     if (e.deltaY < 0) {
         scale += 0.1;
     } else {
         scale = Math.max(1, scale - 0.1);
     }
-
     lightboxImg.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
 });
 
@@ -47,10 +60,8 @@ lightboxImg.addEventListener("mousedown", (e) => {
 
 window.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
-
     translateX = e.clientX - startX;
     translateY = e.clientY - startY;
-
     lightboxImg.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
 });
 
@@ -65,4 +76,3 @@ closeBtn.addEventListener("click", () => {
     translateY = 0;
     lightboxImg.style.transform = "scale(1)";
 });
-
