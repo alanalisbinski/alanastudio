@@ -1,0 +1,338 @@
+body {
+    font-family: sans-serif;
+    background-color: #b2967D;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.logo-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.logotipo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 40px;
+    position: relative;
+    top: -10px;
+    scroll-behavior: smooth;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #4A342A;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color:#31231c;
+}
+
+.secao-apresentacao {
+    width: 100%;
+    height: 600px;
+    background-image: url('imagens/banner.png');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.item-rede {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.circulo-icone {
+    width: 70px;
+    border-radius: 60%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    flex-shrink: 0;
+}
+
+.circulo-icone img {
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+}
+
+.usuario {
+    font-size: 15px;
+    color:#fff;
+    font-weight: 500;
+
+}
+
+.projects {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.projects h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.projetos p {
+    font-size: 16px;
+    color: #fff;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+}
+
+.galeria {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.sobre-mim {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    gap: 40px;
+}
+
+.intro-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px;
+}
+
+
+.intro-text {
+    flex: 1.2;
+}
+
+.intro-text h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #292117;
+}
+
+.intro-text p {
+    font-size: 15px;
+    line-height: 1.7;
+    color:#292117;
+    margin-bottom: 12px;
+}
+
+.intro-text {
+  flex: 1.2;
+}
+
+.intro-text h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.intro-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.coluna-foto-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    margin-left: 40px;  
+}
+
+.foto-perfil {
+    width: 340px;
+    height: 300px;
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M15,45 C10,25 35,10 60,15 C85,20 95,45 85,70 C75,90 45,95 25,85 C5,75 20,65 15,45 Z' fill='%23000'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M15,45 C10,25 35,10 60,15 C85,20 95,45 85,70 C75,90 45,95 25,85 C5,75 20,65 15,45 Z' fill='%23000'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+
+.intro-info {
+    text-align: center;
+    margin-top: 79px;
+}
+
+.intro-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #292117;
+}
+
+.intro-info span {
+    display: block;
+    font-size: 13px;
+    color: #4A342A;
+}
+
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    order: 2;
+  }
+
+  .intro-photo-area {
+    order: 1;
+  }
+}
+
+.my-projects h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #fff;
+}
+
+.my-projects h1 {
+    font-size: 32px;
+    color: #55483d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-projects img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; 
+    background-color: #D7C9B8;
+    border-radius: 10px;
+    padding: 5px; 
+}
+
+.banner-conect {
+    width: 100%;
+    height: 600px;
+    background-image: url('imagens/canect-banner.png');
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-in;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
