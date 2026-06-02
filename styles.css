@@ -146,7 +146,7 @@ header {
 
 .foto-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .foto-perfil {
